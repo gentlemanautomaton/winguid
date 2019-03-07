@@ -13,6 +13,10 @@ const emptyGUID = "{00000000-0000-0000-0000-000000000000}"
 //  XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 //  {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
 //
+// The supplied string is expected to be in hexadecimal notation with all fields
+// in big-endian byte order. Note that some systems may supply mixed-endian or
+// little-endian hexadecimal representations.
+//
 // The conversion of the supplied string is not case-sensitive.
 //
 // If the conversion fails an empty GUID will be returned.
